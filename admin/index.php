@@ -14,16 +14,15 @@
  * @package         pm
  * @since           2.3.0
  * @author          Taiwen Jiang <phppp@users.sourceforge.net>
- * @version         $Id: admin.php 8066 2011-11-06 05:09:33Z beckmi $
  */
 
-include_once 'admin_header.php';
+require_once __DIR__ . '/admin_header.php';
 xoops_cp_header();
 
-$indexAdmin = new ModuleAdmin();
+$adminObject = \Xmf\Module\Admin::getInstance();
 
-echo $indexAdmin->addNavigation('admin.php');
-echo $indexAdmin->renderIndex();
+$adminObject->displayNavigation(basename(__FILE__));
+$adminObject->displayIndex();
 
-include 'admin_footer.php';
+require_once __DIR__ . '/admin_footer.php';
 //xoops_cp_footer();

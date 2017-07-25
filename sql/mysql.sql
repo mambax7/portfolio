@@ -1,29 +1,32 @@
 CREATE TABLE `portfolio_categos` (
-  `id_cat` int(11) NOT NULL auto_increment,
-  `parent` int(11) NOT NULL default '0',
-  `nombre` varchar(150) NOT NULL default '',
-  `desc` text NOT NULL,
-  `orden` int(11) NOT NULL default '0',
-  PRIMARY KEY  (`id_cat`)
-) ENGINE=MyISAM;
+  `id_cat` INT(11)      NOT NULL AUTO_INCREMENT,
+  `parent` INT(11)      NOT NULL DEFAULT '0',
+  `nombre` VARCHAR(150) NOT NULL DEFAULT '',
+  `desc`   TEXT         NOT NULL,
+  `orden`  INT(11)      NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id_cat`)
+)
+  ENGINE = MyISAM;
 
 CREATE TABLE `portfolio_images` (
-  `id_img` int(11) NOT NULL auto_increment,
-  `archivo` varchar(200) NOT NULL default '',
-  `work` int(11) NOT NULL default '0',
-  PRIMARY KEY  (`id_img`)
-) ENGINE=MyISAM;
+  `id_img`  INT(11)      NOT NULL AUTO_INCREMENT,
+  `archivo` VARCHAR(200) NOT NULL DEFAULT '',
+  `work`    INT(11)      NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id_img`)
+)
+  ENGINE = MyISAM;
 
 CREATE TABLE `portfolio_works` (
-  `id_w` int(11) NOT NULL auto_increment,
-  `titulo` varchar(200) NOT NULL default '',
-  `short` varchar(255) NOT NULL default '',
-  `desc` text NOT NULL,
-  `catego` int(11) NOT NULL default '0',
-  `cliente` varchar(255) NOT NULL default '',
-  `comentario` text NOT NULL,
-  `url` varchar(255) NOT NULL default '',
-  `resaltado` tinyint(1) NOT NULL default '0',
-  `imagen` varchar(255) NOT NULL default '',
-  PRIMARY KEY  (`id_w`)
-) ENGINE=MyISAM;
+  `id_w`       INT(11)      NOT NULL AUTO_INCREMENT,
+  `titulo`     VARCHAR(200) NOT NULL DEFAULT '',
+  `short`      VARCHAR(255) NOT NULL DEFAULT '',
+  `desc`       TEXT         NOT NULL,
+  `catego`     INT(11)      NOT NULL DEFAULT '0',
+  `cliente`    VARCHAR(255) NOT NULL DEFAULT '',
+  `comentario` TEXT         NOT NULL,
+  `url`        VARCHAR(255) NOT NULL DEFAULT '',
+  `resaltado`  TINYINT(1)   NOT NULL DEFAULT '0',
+  `imagen`     VARCHAR(255) NOT NULL DEFAULT '',
+  PRIMARY KEY (`id_w`)
+)
+  ENGINE = MyISAM;

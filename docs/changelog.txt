@@ -1,3 +1,8 @@
+1.32 Beta 1       2014-04-23
+=================================
+- moved all images, CSS, and JS files to /assets (mamba)
+- renamed .html Smarty templates to .tpl (mamba)
+
 1.31 Final 2012/03/30 RC
 =================================
 - fixed display for HTML (mamba)
