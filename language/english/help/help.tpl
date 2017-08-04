@@ -1,12 +1,7 @@
 <div id="help-template" class="outer">
-    <h1 class="head">Help:
-        <a class="ui-corner-all tooltip" href="<{$xoops_url}>/modules/portfolio/admin/index.php"
-           title="Back to the administration of Portfolio"> Portfolio
-            <img src="<{xoAdminIcons home.png}>"
-                 alt="Back to the Administration of Portfolio">
-        </a></h1>
+    <{include file=$smarty.const._MI_PORTFOLIO_HELP_HEADER}>
 
-    <h4 class="odd">DESCRIPTION</h4>
+    <h4 class="odd">DESCRIPTION</h4> <br>
 
     <p class="even">Portfolio is a module for publication of your professional portfolio. The module let you create
         categories and works,

@@ -36,7 +36,7 @@
 
 $modversion['version']             = '1.32';
 $modversion['module_status']       = 'Beta 1';
-$modversion['release_date']        = '2014/04/23';
+$modversion['release_date']        = '2017/07/23';
 $modversion['name']                = 'Portfolio';
 $modversion['description']         = _MI_PORTFOLIO_MODDESC;
 $modversion['author']              = 'BitC3R0';
@@ -56,9 +56,6 @@ $modversion['min_xoops']           = '2.5.9';
 $modversion['min_admin']           = '1.2';
 $modversion['min_db']              = array('mysql' => '5.5');
 $modversion['min_admin']           = '1.1';
-//$modversion['dirmoduleadmin']      = '/Frameworks/moduleclasses/moduleadmin';
-//$modversion['icons16']             = '../../Frameworks/moduleclasses/icons/16';
-//$modversion['icons32']             = '../../Frameworks/moduleclasses/icons/32';
 $modversion['modicons16'] = 'assets/images/icons/16';
 $modversion['modicons32'] = 'assets/images/icons/32';
 
@@ -87,6 +84,13 @@ $modversion['templates'][2]['description'] = '';
 $modversion['templates'][3]['file']        = 'portfolio_view.tpl';
 $modversion['templates'][3]['description'] = '';
 
+// ------------------- Help files ------------------- //
+$modversion['helpsection'] = array(
+    ['name' => _MI_PORTFOLIO_OVERVIEW, 'link' => 'page=help'],
+    ['name' => _MI_PORTFOLIO_DISCLAIMER, 'link' => 'page=disclaimer'],
+    ['name' => _MI_PORTFOLIO_LICENSE, 'link' => 'page=license'],
+    ['name' => _MI_PORTFOLIO_SUPPORT, 'link' => 'page=support'],
+);
 // Blocks
 $modversion['blocks'][1]['file']        = 'portfolio_recent.php';
 $modversion['blocks'][1]['name']        = _MI_PORTFOLIO_BKRECENT;

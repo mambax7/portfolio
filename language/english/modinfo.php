@@ -34,3 +34,16 @@ define('_MI_PORTFOLIO_BKFATURED', 'Featured Works');
 
 define('_MI_PORTFOLIO_AM0', 'Home');
 define('_MI_PORTFOLIO_ABOUT', 'About');
+//1.32
+//Help
+define('_MI_PORTFOLIO_DIRNAME', basename(dirname(dirname(__DIR__))));
+define('_MI_PORTFOLIO_HELP_HEADER', __DIR__.'/help/helpheader.tpl');
+define('_MI_PORTFOLIO_BACK_2_ADMIN', 'Back to Administration of ');
+define('_MI_PORTFOLIO_OVERVIEW', 'Overview');
+
+//define('_MI_PORTFOLIO_HELP_DIR', __DIR__);
+
+//help multi-page
+define('_MI_PORTFOLIO_DISCLAIMER', 'Disclaimer');
+define('_MI_PORTFOLIO_LICENSE', 'License');
+define('_MI_PORTFOLIO_SUPPORT', 'Support');

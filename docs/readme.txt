@@ -9,10 +9,10 @@ The users will know about this information in an easy and attractive way.
 
  Requirements
  _____________________________________________________________________
- 
+
 - XOOPS >= 2.5.0
 - PHP version >= 5.2.0
-- ModuleClasses in /Frameworks (download it from here: http://goo.gl/Bmknt)  
+- ModuleClasses in /Frameworks (download it from here: http://goo.gl/Bmknt)
 
 Install/uninstall
 ---------------------
